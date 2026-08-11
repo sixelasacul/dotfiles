@@ -1,0 +1,3 @@
+theme = dankcolors
+command = direct:nu
+shell-integration = detect
