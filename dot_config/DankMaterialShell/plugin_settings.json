@@ -1,0 +1,17 @@
+{
+  "dankActions": {
+    "enabled": true
+  },
+  "dankHooks": {
+    "enabled": true
+  },
+  "dankLauncherKeys": {
+    "enabled": true
+  },
+  "dankKDEConnect": {
+    "enabled": true
+  },
+  "nvidiaGpuDankbarMonitor": {
+    "enabled": true
+  }
+}

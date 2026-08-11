@@ -9,4 +9,5 @@ flatpak install flathub \
 	md.obsidian.Obsidian \
 	com.nextcloud.desktopclient.nextcloud \
 	com.blitzfc.qbz \
-	dev.vencord.Vesktop
+	dev.vencord.Vesktop \
+	com.danklinux.dankcalendar

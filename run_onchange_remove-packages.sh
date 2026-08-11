@@ -1,5 +1,8 @@
 #!/bin/sh
 
-flatpak uninstall flathub \
+flatpak uninstall \
     org.mozilla.firefox \
-    org.mozilla.thunderbird
+    org.mozilla.thunderbird \
+    --delete-data \
+    || echo "could not remove all specified packages"
+# fallback to echo so that the script never fails
