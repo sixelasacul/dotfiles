@@ -1,3 +1,4 @@
 theme = dankcolors
-command = direct:nu
+font-family = "MonaspiceNe Nerd Font Mono"
+command = direct:/home/linuxbrew/.linuxbrew/bin/nu
 shell-integration = detect

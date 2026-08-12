@@ -20,10 +20,15 @@ input {
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
             // localectl set-x11-keymap.
+
+            layout "us"
+            variant "intl"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
         numlock
+        repeat-delay 200
+        repeat-rate 25
     }
 
     // Next sections include libinput settings.
