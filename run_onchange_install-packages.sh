@@ -1,5 +1,5 @@
 #!/bin/sh
-brew install nushell
+brew install nushell starship
 
 flatpak install flathub \
 	app.zen_browser.zen \

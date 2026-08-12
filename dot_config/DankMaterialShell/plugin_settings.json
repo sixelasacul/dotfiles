@@ -1,6 +1,23 @@
 {
   "dankActions": {
-    "enabled": true
+    "enabled": true,
+    "variants": [
+      {
+        "icon": "terminal",
+        "displayText": "VK",
+        "displayCommand": "",
+        "clickCommand": "kill -s 34 $(pgrep -x wvkbd-deskintl)",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 0,
+        "showIcon": true,
+        "showText": true,
+        "visibilityCommand": "pgrep -x wvkbd-deskintl",
+        "visibilityInterval": 1,
+        "id": "variant_1786563213797",
+        "name": "toggle virtual keyboard"
+      }
+    ]
   },
   "dankHooks": {
     "enabled": true
