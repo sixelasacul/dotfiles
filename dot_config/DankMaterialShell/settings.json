@@ -352,7 +352,7 @@
   "textRenderQuality": 0,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
-  "notepadFontSize": 14,
+  "notepadFontSize": 16,
   "notificationSummaryFontSize": 0,
   "notificationBodyFontSize": 0,
   "notepadShowLineNumbers": false,
@@ -361,7 +361,7 @@
   "notepadDefaultMode": "slideout",
   "notepadTransparencyOverride": -1,
   "notepadLastCustomTransparency": 0.7,
-  "notepadUseCompositorGap": false,
+  "notepadUseCompositorGap": true,
   "notepadEdgeGap": 0,
   "soundsEnabled": true,
   "useSystemSoundTheme": false,
@@ -631,6 +631,10 @@
         "weather"
       ],
       "rightWidgets": [
+        {
+          "id": "notepadButton",
+          "enabled": true
+        },
         {
           "id": "systemTray",
           "enabled": true
