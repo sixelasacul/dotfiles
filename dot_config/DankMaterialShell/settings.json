@@ -317,13 +317,13 @@
     }
   ],
   "networkPreference": "auto",
-  "iconThemeDark": "System Default",
-  "iconThemeLight": "System Default",
+  "iconThemeDark": "Papirus-Light",
+  "iconThemeLight": "Papirus-Dark",
   "iconThemePerMode": true,
-  "lastAppliedIconTheme": "breeze",
+  "lastAppliedIconTheme": "Papirus-Dark",
   "cursorSettings": {
     "theme": "System Default",
-    "size": 24,
+    "size": 32,
     "niri": {
       "hideWhenTyping": false,
       "hideAfterInactiveMs": 0
@@ -345,7 +345,7 @@
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
   "fontFamily": "Inter Variable",
-  "monoFontFamily": "Fira Code",
+  "monoFontFamily": "MonaspiceNe NF",
   "fontWeight": 400,
   "fontScale": 1,
   "textRenderType": 0,
@@ -559,7 +559,7 @@
   "updaterIncludeFlatpak": true,
   "updaterAllowAUR": true,
   "updaterIgnoredPackages": [],
-  "displayNameMode": "model",
+  "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
   "niriOutputSettings": {
@@ -581,6 +581,26 @@
         "alwaysCenterSingleColumn": true
       },
       "disabled": true
+    },
+    "DP-3": {
+      "focusAtStartup": false,
+      "hotCorners": {
+        "off": true
+      },
+      "disabled": true,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      }
+    },
+    "DP-1": {
+      "hotCorners": {
+        "off": true
+      },
+      "disabled": true,
+      "focusAtStartup": true,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      }
     }
   },
   "hyprlandOutputSettings": {},
@@ -588,7 +608,7 @@
   "activeDisplayProfile": {},
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
-  "displaySnapToEdge": false,
+  "displaySnapToEdge": true,
   "connectedFrameBarStyleBackups": {
     "default": {
       "shadowIntensity": 0,

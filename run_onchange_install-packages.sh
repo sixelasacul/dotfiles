@@ -1,5 +1,4 @@
 #!/bin/sh
-brew install nushell starship btop
 
 flatpak install flathub \
 	app.zen_browser.zen \
@@ -9,5 +8,4 @@ flatpak install flathub \
 	md.obsidian.Obsidian \
 	com.nextcloud.desktopclient.nextcloud \
 	com.blitzfc.qbz \
-	dev.vencord.Vesktop \
-	com.danklinux.dankcalendar
+	dev.vencord.Vesktop
