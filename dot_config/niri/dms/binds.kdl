@@ -14,7 +14,8 @@ binds {
     XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "3"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
+    Mod+Ctrl+V hotkey-overlay-title="Toggle Floating" { toggle-window-floating; }
     Mod+B hotkey-overlay-title="Open a browser: zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
-    Mod+E hotkey-overlay-title="Open an Editor: zed" { spawn "zed"; }
+    Mod+E hotkey-overlay-title="Open an Editor: zed" { spawn "zeditor"; }
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
 }

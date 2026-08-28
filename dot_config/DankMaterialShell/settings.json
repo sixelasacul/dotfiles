@@ -242,7 +242,7 @@
   "runningAppsGroupByApp": false,
   "runningAppsCurrentMonitor": false,
   "appIdSubstitutions": [],
-  "centeringMode": "index",
+  "centeringMode": "geometric",
   "clockDateFormat": "ddd d MMM yyyy",
   "lockDateFormat": "ddd d MMM yyyy",
   "greeterRememberLastSession": true,
@@ -316,11 +316,11 @@
       "enabled": true
     }
   ],
-  "networkPreference": "auto",
-  "iconThemeDark": "Papirus-Light",
-  "iconThemeLight": "Papirus-Dark",
+  "networkPreference": "wifi",
+  "iconThemeDark": "Papirus-Dark",
+  "iconThemeLight": "Papirus-Light",
   "iconThemePerMode": true,
-  "lastAppliedIconTheme": "Papirus-Dark",
+  "lastAppliedIconTheme": "Papirus-Light",
   "cursorSettings": {
     "theme": "System Default",
     "size": 32,
@@ -571,7 +571,7 @@
       "layout": {
         "alwaysCenterSingleColumn": true
       },
-      "disabled": true
+      "disabled": null
     },
     "Dell Inc. DELL U2419HC GVJZPS2": {
       "hotCorners": {
@@ -580,7 +580,7 @@
       "layout": {
         "alwaysCenterSingleColumn": true
       },
-      "disabled": true
+      "disabled": null
     },
     "DP-3": {
       "focusAtStartup": false,
@@ -601,6 +601,16 @@
       "layout": {
         "alwaysCenterSingleColumn": true
       }
+    },
+    "eDP-1": {
+      "hotCorners": {
+        "off": true
+      },
+      "focusAtStartup": true,
+      "layout": {
+        "alwaysCenterSingleColumn": true
+      },
+      "disabled": true
     }
   },
   "hyprlandOutputSettings": {},
@@ -642,15 +652,29 @@
         },
         {
           "id": "focusedWindow",
-          "enabled": true
+          "enabled": true,
+          "focusedWindowSize": 1,
+          "focusedWindowCompactMode": false
         }
       ],
       "centerWidgets": [
         "music",
-        "clock",
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        },
         "weather"
       ],
       "rightWidgets": [
+        {
+          "id": "dankActions:variant_1787149573772",
+          "enabled": true
+        },
+        {
+          "id": "dankActions:variant_1787683573296",
+          "enabled": true
+        },
         {
           "id": "notepadButton",
           "enabled": true
@@ -669,11 +693,22 @@
         },
         {
           "id": "memUsage",
-          "enabled": true
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "nvidiaGpuDankbarMonitor",
           "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true,
+          "showBatteryPercent": true,
+          "showBatteryPercentOnlyOnBattery": false,
+          "showBatteryTime": false,
+          "showBatteryTimeOnlyOnBattery": false,
+          "batteryPillStyle": false,
+          "batteryPillPercentSign": false
         },
         {
           "id": "notificationButton",

@@ -21,9 +21,15 @@ input {
             // from org.freedesktop.locale1. You can control these using
             // localectl set-x11-keymap.
 
+            // ralt+' > e -> é
+            // ralt+` > e -> è
+            // ralt+shift+' > e -> ë
+            // ralt+shift+` > e -> ẽ
+            // ralt+, > c -> ç
             layout "us"
-            variant "altgr-intl"
+            variant "altgr-weur"
         }
+
 
         // Enable numlock on startup, omitting this setting disables it.
         numlock
@@ -42,9 +48,9 @@ input {
         // drag false
         // drag-lock
         natural-scroll
-        accel-speed 0.0
+        accel-speed 0.5
         accel-profile "flat"
-        scroll-factor 0.1
+        scroll-factor 0.5
         // scroll-method "two-finger"
         // disabled-on-external-mouse
     }
@@ -639,6 +645,17 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
+// laptop specific stuff
+switch-events {
+    tablet-mode-on {
+      spawn "bash" "-c" "kbd --start && rs --set-tablet 1";
+    }
+    tablet-mode-off {
+      spawn "bash" "-c" "kbd --stop && rs --set-tablet 0";
+    }
+}
+
+
 // Add to the end of ~/.config/niri/config.kdl
 include "dms/colors.kdl"
 include "dms/layout.kdl"
@@ -647,5 +664,3 @@ include "dms/binds.kdl"
 include "dms/env.kdl"
 include "dms/outputs.kdl"
 include "dms/cursor.kdl"
-
-include optional=true "laptop.kdl"

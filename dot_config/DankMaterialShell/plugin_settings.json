@@ -6,16 +6,31 @@
         "icon": "terminal",
         "displayText": "VK",
         "displayCommand": "",
-        "clickCommand": "kill -s 34 $(pgrep -x wvkbd-deskintl)",
+        "clickCommand": "kbd --toggle",
         "middleClickCommand": "",
         "rightClickCommand": "",
-        "updateInterval": 0,
+        "updateInterval": 1,
         "showIcon": true,
         "showText": true,
         "visibilityCommand": "pgrep -x wvkbd-deskintl",
         "visibilityInterval": 1,
-        "id": "variant_1786563213797",
-        "name": "toggle virtual keyboard"
+        "id": "variant_1787149573772",
+        "name": "VK"
+      },
+      {
+        "icon": "terminal",
+        "displayText": "RS",
+        "displayCommand": "",
+        "clickCommand": "rs --toggle",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 1,
+        "showIcon": false,
+        "showText": true,
+        "visibilityCommand": "rs --can-rotate",
+        "visibilityInterval": 1,
+        "id": "variant_1787683573296",
+        "name": "RS"
       }
     ]
   },
